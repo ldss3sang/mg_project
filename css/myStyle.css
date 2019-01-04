@@ -6,3 +6,47 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Playfair Display";
     letter-spacing: 5px;
 }
+
+.myNav{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.tab-wrap {
+  transition: 0.3s box-shadow ease;
+  border-radius: 6px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+  background-color: #fff;
+  margin: 40px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  &:hover {
+    box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+  }
+}
+
+.tab{
+    display: none;
+    @for $i from 1 through 4{
+        &:checked:nth-of-type(#{$i}) ~ .tab_content:nth-of-type(#{$i}){
+            opacity: 1;
+            transition: 0.5s opacity ease-in, 0.8s transform ease;
+            position: relative;
+            top: 0; 
+            z-index: 100;
+            transform: translateY(0px);
+            text-shadow: 0 0 0;
+        }
+    }
+}
+
+.menuContainer {
+  margin: 0 auto;
+  display: block;
+  max-width: 800px;
+  > *:not(.tab-wrap) {
+    padding: 0 80px;
+  }
+}

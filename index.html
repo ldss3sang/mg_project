@@ -19,7 +19,7 @@
 
             <a href="#home" class="w3-bar-item w3-button" style="padding: 0px; object-fit: cover;">
               <img src="img/logo_temp2.png" width="120" height="40">
-              </a>
+            </a>
             <!-- Right-sided navbar links. Hide them on small screens -->
             <div class="w3-right w3-hide-small">
                 <a href="#about" class="w3-bar-item w3-button">About</a>
@@ -57,29 +57,49 @@
           <hr>
 
           <!-- Menu Section -->
-          <div class="w3-row w3-padding-64" id="menu">
-            <div class="w3-col l6 w3-padding-large">
-              <h1 class="w3-center">Our Menu</h1><br>
-              <h4>Bread Basket</h4>
-              <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-
-              <h4>Honey Almond Granola with Fruits</h4>
-              <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-
-              <h4>Belgian Waffle</h4>
-              <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-
-              <h4>Scrambled eggs</h4>
-              <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-
-              <h4>Blueberry Pancakes</h4>
-              <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
-            </div>
-
-            <div class="w3-col l6 w3-padding-large">
-              <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
-            </div>
-          </div>
+            <section>
+                <div class="menuContainer">
+                    <div class="menuIntro">
+                        <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. </p>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+                        <label for="tab1">Soft Tofu Stew</label>
+                        
+                        <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                        <label for="tab2">Galbi</label>
+                        
+                        <input type="radio" id="tab3" name="tabGroup1" class="tab">
+                        <label for="tab3">Bibimbab</label>
+                        
+                        <input type="radio" id="tab4" name="tabGroup1" class="tab">
+                        <label for="tab4">Sushi</label>
+                        
+                        <div class="tab_content">
+                            <h3>Soft Tofu Stew</h3>
+                            <p>The most famous Korean food at MyoungGa is Soft Tofu Stew. The dish is made with freshly curdled soft tofu (which has not been strained and pressed), vegetables, sometimes mushrooms, onion, optional seafood (commonly oysters, mussels, clams and shrimp), optional meat (commonly beef or pork), and gochujang (chili paste) or gochu garu (chili powder). The dish is assembled and cooked directly in the serving vessel, which is traditionally made of thick, robust porcelain, but can also be ground out of solid stone. A raw egg can be put in the jjigae just before serving, and the dish is delivered while bubbling vigorously. It is typically eaten with a bowl of cooked white rice and several banchan (side dishes).</p>
+                        </div>
+                        
+                        <div class="tab_content">
+                            <h3>Galbi</h3>
+                            <p>"Galbi" is the Korean word for "rib", and the dish is usually made with beef short ribs. When pork spareribs or another meat is used instead, the dish is named accordingly. Galbi is served raw, then cooked on tabletop grills usually by the diners themselves.</p>
+                        </div>
+                        
+                        <div class="tab_content">
+                            <h3>Bibimbab</h3>
+                            <p>Bibimbap, sometimes romanized as bi bim bap or bi bim bop, is a Korean rice dish. Bibimbap is served as a bowl of warm white rice topped with namul and gochujang, soy sauce, or doenjang. A raw or fried egg and sliced meat are common additions. The hot dish is stirred together thoroughly just before eating.</p>
+                            <p>Use this recipe to make arguably the best known Korean dish around the world: bibimbap. What makes this meal stand out? Not only is it a Korean classic, it's also delicious, gorgeous on the plate, and easily tweaked for different palates and spice levels. That means if you're a typical American or Westerner who can't handle foods that are extremely spicy, homemade bibimbap is the dish for you since you can easily lower the spice load. The bottom line is that if you're a true fan of Korean cuisine, you should know how to make this dish, or at least try it. Bibimbap is to Korean cuisine what apple pie is to American cuisine. </p> 
+                        </div>
+                        
+                        <div class="tab_content">
+                            <h3>Sushi</h3>
+                            <p>Sushi is a Japanese dish of specially prepared vinegared rice, usually with some sugar and salt, combined with a variety of ingredients, such as seafood, vegetables, and occasionally tropical fruits. It goes along with the Soft Tofu Stew. hahaha so not true.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+          
 
           <hr>
 
@@ -105,8 +125,9 @@
         <footer>
             <p class="text-center">Myoung Ga Copyright &copy; 2018 </p>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha2562Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha-2562Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+        
     </body>
 </html>
