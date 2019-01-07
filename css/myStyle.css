@@ -7,8 +7,12 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 5px;
 }
 
-.myNav{
+.myNav {
     background-color: rgba(0,0,0,0.3);
+}
+
+.myNav div div a {
+    text-decoration: none;
 }
 
 .tab-wrap {

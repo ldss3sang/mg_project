@@ -1,35 +1,48 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Tofu Master</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/myStyle.css">
-        
-        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    </head> 
-    <body>
-        <!-- Navbar (sit on top) -->
-        <div class="w3-top myNav">
-          <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <a href="#home" class="w3-bar-item w3-button" style="padding: 0px; object-fit: cover;">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Customized CSS -->
+    <link rel="stylesheet" href="css/myStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <title>Tofu Master</title>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <a href="#" class="navbar-brand">
               <img src="img/logo_temp2.png" width="120" height="40">
-            </a>
-            <!-- Right-sided navbar links. Hide them on small screens -->
-            <div class="w3-right w3-hide-small">
-                <a href="#about" class="w3-bar-item w3-button">About</a>
-                <a href="#menu" class="w3-bar-item w3-button">Menu</a>
-                <a href="#media" class="w3-bar-item w3-button">Media</a>
-                <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
-            </div>
-          </div>
-        </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#media">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
         <!-- Page content -->
         <section id="introVideo">
             <div class="obj-fit abs fill" src = "img/gomTang.mp4">
@@ -58,7 +71,7 @@
 
           <!-- Menu Section -->
             <section>
-                <div class="menuContainer">
+                <div id="menu" class="menuContainer">
                     <div class="menuIntro">
                         <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. </p>
                     </div>
@@ -121,13 +134,19 @@
         <!-- End page content -->
         </div>
 
-        <!-- Footer -->
-        <footer>
-            <p class="text-center">Myoung Ga Copyright &copy; 2018 </p>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha-2562Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
         
-    </body>
+        
+    <!-- Footer -->
+    <footer>
+        <p class="text-center">Myoung Ga Copyright &copy; 2018 </p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
